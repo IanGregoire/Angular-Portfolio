@@ -1,0 +1,23 @@
+// Dark theme utility
+@mixin theme-light {
+    background-color: $color-bg-light;
+    color: $color-text-light;
+}
+
+@mixin theme-dark {
+    background-color: $color-bg-dark;
+    color: $color-text-dark;
+}
+
+// Responsive breakpoints
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) { @content; }
+  }
+}

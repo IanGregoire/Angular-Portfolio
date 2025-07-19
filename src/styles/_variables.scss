@@ -1,0 +1,30 @@
+// Light Theme
+$color-bg-light: #ffffff;
+$color-text-light: #1f2937;
+$color-primary-light: #3b82f6;
+$color-accent-light: #e2e8f0;
+$color-border-light: #cbd5e1;
+
+//Dark Theme
+$color-bg-dark: #0f172a; // Tailwind slate-900
+$color-text-dark: #f1f5f9; // Tailwind slate-100
+$color-primary-dark: #60a5fa;
+$color-accent-dark: #1e293b;
+$color-border-dark: #334155;
+
+// Fonts & Sizes
+$font-base: 'Inter', sans-serif;
+$font-size-base: 1rem;
+$font-size-lg: 1.25rem;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
