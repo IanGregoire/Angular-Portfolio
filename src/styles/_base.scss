@@ -6,16 +6,27 @@
 }
 
 body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   margin: 0;
-  font-family: $font-base;
-  font-size: $font-size-base;
-  line-height: 1.6;
+  padding: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
-
-  // Default to light theme
-  @include theme-light;
-
-  &.dark {
-    @include theme-dark;
-  }
 }
+
+
+// body {
+//   margin: 0;
+//   font-family: $font-base;
+//   font-size: $font-size-base;
+//   line-height: 1.6;
+//   transition: background-color 0.3s ease, color 0.3s ease;
+
+//   // Default to light theme
+//   @include theme-light;
+
+//   &.dark {
+//     @include theme-dark;
+//   }
+// }
