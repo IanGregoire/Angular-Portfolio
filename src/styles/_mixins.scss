@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 // Dark theme utility
 @mixin theme-light {
     background-color: $color-bg-light;
