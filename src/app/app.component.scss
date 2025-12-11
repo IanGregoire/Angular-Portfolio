@@ -1,0 +1,16 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.layout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-lg $spacing-md;
+
+  @include respond(sm) {
+    padding: $spacing-md $spacing-sm;
+  }
+
+  @include respond(xs) {
+    padding: $spacing-sm $spacing-xs;
+  }
+}
