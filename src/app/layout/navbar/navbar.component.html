@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <div class="container navbar-container">
+    <a class="logo" routerLink="/">Ian Gregoire</a>
+
+    <ul class="nav-links" [class.active]="menuOpen">
+      <li><a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projects</a></li>
+      <li><a routerLink="/technology" routerLinkActive="active" (click)="closeMenu()">Technology</a></li>
+    </ul>
+
+    <div class="navbar-actions">
+      <button class="theme-toggle" (click)="toggleTheme()">
+        <i [class]="isDarkMode ? 'bi bi-sun' : 'bi bi-moon'"></i>
+      </button>
+
+      <button class="menu-toggle" (click)="toggleMenu()">
+        <i class="bi bi-list" *ngIf="!menuOpen"></i>
+        <i class="bi bi-x-lg" *ngIf="menuOpen"></i>
+      </button>
+    </div>
+  </div>
+</nav>
