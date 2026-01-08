@@ -50,6 +50,10 @@
   display: flex;
   gap: $spacing-sm;
 
+  .btn {
+    text-decoration: none;
+  }
+
   @include respond(sm) {
     flex-direction: column;
     width: 100%;
