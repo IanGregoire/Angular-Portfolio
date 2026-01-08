@@ -12,21 +12,21 @@ export class ProjectsComponent {
     {
       title: 'Remix Kanban Board',
       description: 'A drag-and-drop kanban board built with Remix and Supabase.',
-      image: 'assets/images/kanban.png',
+      image: 'assets/kanban.png',
       demo: 'https://remix-kanban.example.com',
       repo: 'https://github.com/IanGregoire/Kanban-Board'
     },
     {
       title: 'GeoQuiz Indonesia',
       description: 'Interactive geography quiz app using React and GeoJSON maps.',
-      image: 'assets/images/geoguessr.png',
+      image: 'assets/geoguessr.png',
       demo: 'https://geoguiz.example.com',
       repo: 'https://github.com/IanGregoire/IndonesianMapQuiz'
     },
     {
       title: 'Angular Portfolio',
       description: 'Personal portfolio site built with Angular 19, SCSS, and TailwindCSS.',
-      image: 'assets/images/portfolio.png',
+      image: 'assets/portfolio.png',
       demo: 'https://portfolio.example.com',
       repo: 'https://github.com/IanGregoire/Angular-Portfolio'
     }
