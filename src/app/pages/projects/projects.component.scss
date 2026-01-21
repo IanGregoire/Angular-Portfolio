@@ -9,12 +9,12 @@
 }
 
 .project-card {
-  background: var(--card-bg);
+  background: var(--color-accent);
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 
   &:hover {
     transform: translateY(-4px);
@@ -64,7 +64,7 @@
 
   .description {
     flex-grow: 1;
-    color: var(--muted-text);
+    color: var(--color-text);
     line-height: 1.6;
   }
 }
@@ -80,7 +80,7 @@
   li {
     font-size: 0.7rem;
     padding: 0.25rem 0.5rem;
-    background: var(--badge-bg);
+    background: var(--color-accent);
     border-radius: 999px;
   }
 }

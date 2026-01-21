@@ -17,7 +17,7 @@
     color: var(--text);
 
     .highlight {
-      color: var(--primary);
+      color: var(--color-primary);
     }
   }
 
@@ -35,7 +35,7 @@
     margin-bottom: 2.5rem;
 
     .highlight-card {
-      background: var(--surface);
+      background: var(--color-bg);
       border-radius: 1rem;
       padding: 1.5rem;
       box-shadow: var(--shadow);
@@ -43,7 +43,7 @@
 
       i {
         font-size: 1.8rem;
-        color: var(--primary);
+        color: var(--color-primary);
         margin-bottom: 0.75rem;
         display: inline-block;
       }
@@ -94,7 +94,7 @@
       transition: var(--transition);
 
       &:hover {
-        color: var(--primary);
+        color: var(--color-primary);
         transform: translateY(-2px);
       }
     }

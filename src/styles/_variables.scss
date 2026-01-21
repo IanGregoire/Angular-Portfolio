@@ -7,6 +7,13 @@
   --color-accent: #e2e8f0;
   --color-border: #cbd5e1;
 
+  --transition: 0.3s ease; /* default transition */
+  --transition-fast: 0.2s ease;
+  --transition-slow: 0.5s ease;
+  
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1),
+                0 4px 6px -4px rgba(0,0,0,0.1);
+
   --font-base: 'Inter', sans-serif;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
@@ -23,6 +30,9 @@
   --color-primary: #60a5fa;
   --color-accent: #1e293b;
   --color-border: #334155;
+
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.2),
+                0 4px 6px -4px rgba(0,0,0,0.2);
 }
 
 // Light Theme

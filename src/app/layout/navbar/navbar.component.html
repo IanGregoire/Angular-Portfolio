@@ -3,7 +3,7 @@
     <a class="logo" routerLink="/">Ian Gregoire</a>
 
     <ul class="nav-links" [class.active]="menuOpen">
-      <li><a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a></li>
       <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a></li>
       <li><a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projects</a></li>
       <li><a routerLink="/technology" routerLinkActive="active" (click)="closeMenu()">Technology</a></li>
