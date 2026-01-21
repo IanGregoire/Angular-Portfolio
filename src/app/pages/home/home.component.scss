@@ -2,111 +2,117 @@
 @use '../../../styles/mixins' as *;
 
 .home-container {
-  padding: $spacing-lg 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
 }
 
 .hero {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
+  max-width: 900px;
 
-  @include respond(sm) {
-    text-align: left;
-    padding: 0 $spacing-sm;
-  }
-}
+  .title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text);
 
-.title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--color-text);
-
-  @include respond(md) {
-    font-size: 2.5rem;
+    .highlight {
+      color: var(--primary);
+    }
   }
 
-  @include respond(sm) {
-    font-size: 2rem;
-  }
-
-  .highlight {
-    color: var(--color-primary);
-  }
-}
-
-.subtitle {
-  font-size: 1.25rem;
-  color: var(--color-text);
-  margin-top: $spacing-sm;
-  line-height: 1.6;
-
-  @include respond(sm) {
+  .subtitle {
     font-size: 1.1rem;
-  }
-}
-
-.hero-buttons {
-  margin-top: $spacing-md;
-  display: flex;
-  gap: $spacing-sm;
-
-  .btn {
-    text-decoration: none;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
   }
 
-  @include respond(sm) {
-    flex-direction: column;
-    width: 100%;
+  .hero-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
 
-    .btn {
-      width: 100%;
-      text-align: center;
+    .highlight-card {
+      background: var(--surface);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+
+      i {
+        font-size: 1.8rem;
+        color: var(--primary);
+        margin-bottom: 0.75rem;
+        display: inline-block;
+      }
+
+      h3 {
+        font-size: 1.05rem;
+        margin-bottom: 0.5rem;
+        color: var(--text);
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
+      }
+    }
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .current-work {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .social {
+    display: flex;
+    gap: 1.25rem;
+
+    a {
+      font-size: 1.5rem;
+      color: var(--text-muted);
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--primary);
+        transform: translateY(-2px);
+      }
     }
   }
 }
 
-.social {
-  margin-top: $spacing-md;
-  display: flex;
-  gap: $spacing-md;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
 
-  a {
-    font-size: 1.8rem;
-    color: var(--color-text);
-    transition: 0.2s ease;
+    .hero-buttons {
+      justify-content: center;
+    }
 
-    &:hover {
-      color: var(--color-primary);
-      transform: translateY(-3px);
+    .social {
+      justify-content: center;
     }
   }
 }
 
-/* Animations */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 0.7s ease forwards;
-}
-
-.slide-up {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideUp 0.6s ease forwards;
-}
-
-.delay-1 { animation-delay: 0.15s; }
-.delay-2 { animation-delay: 0.3s; }
-.delay-3 { animation-delay: 0.45s; }
-
-@keyframes slideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
