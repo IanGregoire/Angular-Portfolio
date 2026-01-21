@@ -1,28 +1,172 @@
-<section class="container py-12 max-w-3xl">
-  <h2 class="text-2xl font-bold mb-4">About Me</h2>
+<section class="about-container fade-in">
+  <!-- Header -->
+  <header class="about-header">
+    <img
+      class="avatar"
+      src="./assets/avatar.jpg"
+      alt="Ian Gregoire"
+    />
 
-  <div class="grid gap-6 md:grid-cols-3">
-    <div class="md:col-span-1">
-      <img src="./assets/avatar.jpg" alt="Ian Gregoire" />
-    </div>
-
-    <div class="md:col-span-2">
-      <p class="lead mb-4">
-        I build front-end tools and small web apps for developers and designers. I focus on clarity, performance and delightful UX.
-      </p>
-
-      <h3 class="font-semibold mt-4">What I do</h3>
-      <ul class="mt-2 list-disc list-inside text-muted">
-        <li>UI engineering (React/Remix/Angular)</li>
-        <li>Database Management and Creation (Supabase/mySql)</li>
-        <li>Dev tools & productivity apps</li>
-        <li>Design systems & component libraries</li>
-      </ul>
-
-      <h3 class="font-semibold mt-4">Contact</h3>
-      <p class="text-sm text-muted">
-        <span>{{ email }}</span> · <a href="https://github.com/IanGregoire" target="_blank">GitHub</a>
+    <div>
+      <h1>Ian Gregoire</h1>
+      <p class="role">Frontend / Full-Stack Web Developer</p>
+      <p class="summary">
+        I build modern, scalable web applications with a focus on clean
+        architecture, performance, and intuitive user experiences.
       </p>
     </div>
+  </header>
+
+  <!-- Profile -->
+  <section class="about-section">
+    <h2>Profile</h2>
+    <p>
+      I’m a web developer with hands-on experience building frontend-heavy
+      applications using Angular, React, and Remix. I enjoy working at the
+      intersection of UI engineering and system design — turning complex
+      problems into maintainable, user-friendly solutions.
+    </p>
+    <p>
+      My background includes building internal tools, productivity apps,
+      and interactive interfaces backed by real databases and APIs.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="about-section">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div>
+        <h3>Frontend</h3>
+        <ul>
+          <li>Angular, React, Remix</li>
+          <li>TypeScript, JavaScript, HTML, CSS, SCSS</li>
+          <li>Chakra UI, TailwindCSS</li>
+          <li>Component-driven architecture</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Backend & Data</h3>
+        <ul>
+          <li>Node.js</li>
+          <li>Supabase</li>
+          <li>PostgreSQL</li>
+          <li>REST APIs & data modeling</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Tools & Practices</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Responsive design</li>
+          <li>Accessibility-first UI</li>
+          <li>Performance optimization</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="about-section">
+  <h2>Professional Experience</h2>
+
+  <div class="experience-item">
+    <div class="experience-header">
+      <h3>U.S. Bank</h3>
+      <span class="experience-role">
+        Technology / Application Support Analyst
+      </span>
+    </div>
+
+    <p class="experience-meta">
+      Enterprise Financial Applications · Incident Management · System Support
+    </p>
+
+    <ul class="experience-bullets">
+      <li>
+        Provided technical support for enterprise-scale financial applications,
+        ensuring availability, reliability, and performance in production
+        environments.
+      </li>
+      <li>
+        Investigated and resolved application issues by analyzing logs, system
+        behavior, workflows, and user-reported incidents.
+      </li>
+      <li>
+        Collaborated with software engineers, QA teams, and business stakeholders
+        to troubleshoot defects and support application releases.
+      </li>
+      <li>
+        Worked within regulated financial systems, adhering to security,
+        compliance, documentation, and change-management standards.
+      </li>
+      <li>
+        Supported incident response, root cause analysis, and process
+        improvements to reduce recurring issues.
+      </li>
+      <li>
+        Gained hands-on experience with production systems, deployment cycles,
+        and real-world operational constraints.
+      </li>
+    </ul>
   </div>
+
+  <div class="experience-item">
+    <h3>Independent Development & Technical Projects</h3>
+
+    <ul class="experience-bullets">
+      <li>
+        Designed and developed responsive web applications using Angular,
+        React, Remix, TypeScript, JavaScript, HTML, CSS, and SCSS.
+      </li>
+      <li>
+        Built component-driven user interfaces with a focus on performance,
+        accessibility, and maintainable frontend architecture.
+      </li>
+      <li>
+        Implemented full-stack features integrating Supabase, PostgreSQL,
+        authentication, and RESTful APIs.
+      </li>
+      <li>
+        Applied modern development practices including Git version control,
+        modular code organization, and reusable UI patterns.
+      </li>
+      <li>
+        Developed internal tools and productivity applications such as Kanban
+        boards, dashboards, and interactive learning tools.
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Projects Philosophy -->
+  <section class="about-section">
+    <h2>What I’m Building</h2>
+    <p>
+      I focus on projects that emphasize real-world workflows — task
+      management, data visualization, interactive learning tools, and
+      systems that mirror production applications.
+    </p>
+    <p>
+      My goal is to continuously improve my engineering depth while
+      delivering polished user experiences.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="about-section contact">
+    <h2>Contact</h2>
+    <p>
+      <strong>Email:</strong> {{ email }}
+    </p>
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/IanGregoire" target="_blank">
+        github.com/IanGregoire
+      </a>
+    </p>
+  </section>
 </section>
